@@ -1,8 +1,8 @@
-const assertEquals = function (arr1, arr2) {
+const assertEquals = (arr1, arr2) => {
   if (eqArrays(arr1, arr2) === true) {
-    console.log('✅ ');
+    console.log('✅ ✅ ✅ ');
   } else {
-    console.log('❌');
+    console.log('❌ ❌ ❌');
   }
 }
 
