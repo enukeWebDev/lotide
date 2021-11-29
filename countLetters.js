@@ -1,4 +1,4 @@
-
+/*
 const assertEqual = (actual, expected) => {
   if (actual === expected) {
     return (`✅ ✅ ✅ Assertion Passed: ${[actual]} === ${[expected]}`);
@@ -6,6 +6,8 @@ const assertEqual = (actual, expected) => {
     return (`❌ ❌ ❌ Assertion Failed: ${[actual]} !== ${[expected]}`);
   }
 };
+*/
+const assertEqual = require('./assertEqual');
 
 const countLetters = string => {
   const outputObj = {}; //placeholder for the new object
@@ -20,10 +22,7 @@ const countLetters = string => {
   return outputObj;
 };
 
-//TEST CODE
-console.log(countLetters("L H L"));
-console.log(countLetters("lighthouse in the house"));
-console.log(countLetters(""));
+module.exports = countLetters;
 
-console.log(assertEqual((countLetters("LHL"))["L"], 1));
-console.log(assertEqual((countLetters("LHL"))["H"], 1));
+
+
