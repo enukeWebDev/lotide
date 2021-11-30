@@ -1,13 +1,12 @@
+/*
+
 const eqArrays = (arr1, arr2) => {
   // check if the array lengths are different
   // if this is true, there is no point moving forward
   if (arr1.length !== arr2.length) {
     return false;
   }
-  if (arr1.join(',') === arr2.join(',')) {
-    return true;
-  }
-  else return false;
+  else return true;
 };
 
 const assertEqual = (actual, expected) => {
@@ -17,6 +16,10 @@ const assertEqual = (actual, expected) => {
     console.log(`❌ ❌ ❌ Assertion Failed: ${[actual]} !== ${[expected]}`);
   }
 };
+*/
+
+const assertEqual = require('./assertEqual');
+const eqArrays = require('./eqArrays');
 
 const middle = array => {
   //Sort the array to ascending to order using sort method
@@ -35,7 +38,7 @@ const middle = array => {
     return [];
   }
   if (array.length % 2 !== 0) {
-    middleElement.push(sortedArr[array.length / 2 - .5]);
+    middleElement.push(sortedArr[array.length / 2 - 1 / 2]);
     // return middleElement;
   }
   else {
@@ -45,4 +48,6 @@ const middle = array => {
   }
   return middleElement;
 };
+
+module.exports = middle;
 

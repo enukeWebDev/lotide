@@ -6,8 +6,6 @@ const assertArraysEqual = (arr1, arr2) => {
   }
 };
 const eqArrays = (arr1, arr2) => {
-  // check if the array lengths are different
-  // if this is true, there is no point moving forward
   if (arr1.length !== arr2.length) {
     return false;
   }
@@ -16,6 +14,3 @@ const eqArrays = (arr1, arr2) => {
 
 module.exports = assertArraysEqual;
 
-//Test Codes
-//assertArraysEqual(['a', 'b'], ['c', 'd', 'e']);
-//assertArraysEqual([1, 2], ['c', 'd']);

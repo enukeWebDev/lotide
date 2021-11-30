@@ -23,6 +23,10 @@ const countLetters = string => {
 };
 
 module.exports = countLetters;
+/*
+console.log(countLetters("L H L"));
+console.log(assertEqual((countLetters("LHL"))["L"], 2));
+*/
 
 
 
