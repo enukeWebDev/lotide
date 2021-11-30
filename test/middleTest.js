@@ -1,3 +1,3 @@
-const assertEqual = require('./assertEqual');
-const eqArrays = require('./eqArrays');
-const middle = require('./middle');
+const assertEqual = require('../assertEqual');
+const eqArrays = require('../eqArrays');
+const middle = require('../middle');

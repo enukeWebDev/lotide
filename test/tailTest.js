@@ -1,7 +1,7 @@
-const assertEqual = require('./assertEqual');
-const tail = require('./tail');
+const assertEqual = require('../assertEqual');
+const tail = require('../tail');
 
-/*
+
 //TEST CODE
 const words = ["Yo Yo", "Lighthouse", "Labs"];
 tail(words); // no need to capture the return value since we are not checking it
@@ -14,4 +14,3 @@ assertEqual(words1.length, 1);
 const words0 = [];
 tail(words0);
 assertEqual(words0.length, 0);
-*/
