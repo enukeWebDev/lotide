@@ -1,12 +1,3 @@
-/*
-const assertEqual = (actual, expected) => {
-  if (actual === expected) {
-    return (`✅ ✅ ✅ Assertion Passed: ${[actual]} === ${[expected]}`);
-  } else {
-    return (`❌ ❌ ❌ Assertion Failed: ${[actual]} !== ${[expected]}`);
-  }
-};
-*/
 const assertEqual = require('./assertEqual');
 
 const countLetters = string => {
@@ -23,10 +14,6 @@ const countLetters = string => {
 };
 
 module.exports = countLetters;
-/*
-console.log(countLetters("L H L"));
-console.log(assertEqual((countLetters("LHL"))["L"], 2));
-*/
 
 
 

@@ -6,7 +6,6 @@ const assertEqual = (arr1, arr2) => {
   }
 }
 
-
 const eqArrays = (arr1, arr2) => {
   // check if the array lengths are different
   // if this is true, there is no point moving forward
