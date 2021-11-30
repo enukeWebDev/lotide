@@ -1,23 +1,3 @@
-/*
-
-const eqArrays = (arr1, arr2) => {
-  // check if the array lengths are different
-  // if this is true, there is no point moving forward
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
-  else return true;
-};
-
-const assertEqual = (actual, expected) => {
-  if (actual === expected) {
-    console.log(`✅ ✅ ✅ Assertion Passed: ${[actual]} === ${[expected]}`);
-  } else {
-    console.log(`❌ ❌ ❌ Assertion Failed: ${[actual]} !== ${[expected]}`);
-  }
-};
-*/
-
 const assertEqual = require('./assertEqual');
 const eqArrays = require('./eqArrays');
 
