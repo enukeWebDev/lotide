@@ -1,4 +1,4 @@
-const assertObjectsEqual = function(actual, expected) {
+const assertObjectsEqual = (actual, expected) => {
   const inspect = require('util').inspect; // <= add this line
 
   if (actual === expected) {
